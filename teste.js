@@ -1,15 +1,15 @@
 const fs = require('fs');
 
-function callback() {
+function callback(erro) {
     if (erro) {
         //Informar ao usuário que a gravação falhou
     } else{
-        //Informar ao usuário que a gravação deu certo 
+        console.log("Parabéns você conseguiu!");
     }
 }
 
 class Pessoa{
-    constructor(nome, cargo, idade) {
+    constructor(nome, cargo) {
         this.nome = nome; //propriedade nome
         this.cargo = cargo; //propriedade cargo
     }
